@@ -35,7 +35,12 @@ const TodoList = () => {
                   {todo.text}
                 </li>
               </ul>
-              <span className="btn btn-sm float-right">
+              <span
+                className="btn btn-sm float-right"
+                onClick={() =>
+                  dispatch({ type: "SET_CURRENT_TODO", payload: todo })
+                }
+              >
                 <EditOutlined className="text-warning" />
               </span>
               <span

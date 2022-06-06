@@ -6,6 +6,7 @@ const TodoContext = React.createContext({
     { id: 2, text: "hello Rahul", done: false },
     { id: 3, text: "hello Sam", done: true },
   ],
+  currentTodo: {},
 });
 
 export default TodoContext;

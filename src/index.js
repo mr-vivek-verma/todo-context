@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import TodoContext from "./context";
 import reducer from "./reducer";
 import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 // import "./index.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <TodoContext.Provider value={{ state, dispatch }}>
+      <TodoForm />
       <TodoList />
     </TodoContext.Provider>
   );
