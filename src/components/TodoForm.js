@@ -23,7 +23,7 @@ const TodoForm = () => {
     } else {
       setTodo("");
     }
-  }, [currentTodo.id]);
+  }, [currentTodo.text]);
   return (
     <form onSubmit={handleSubmit}>
       <div
